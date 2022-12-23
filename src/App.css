@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+html {
+  background: #272727;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  justify-content: start;
+  gap: 15px;
+  align-items: center;
+  padding: 0px 80px;
+  background: #25aae1;
+}
+
+h1 {
+  color: white;
+  font-family: 'Rubik Vinyl', cursive;
+}
+
+h3 {
+  color: white;
+}
+
+button {
+  height: 44px;
+  font-size: 22px;
+  padding: 0px 12px;
+  color: #25aae1;
+  background-color: #272727;
+  border: 2px solid #25aae1;
+  border-radius: 3px;
+  min-width: 125px;
+  font-family: 'Rubik Vinyl', cursive;
+}
+
+.page {
+  width: calc(100vw - 520px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+  position: sticky;
+  top: 0px;
+}
+
+.btn-container button {
+  background-color: black;
+}
+
+button:hover {
+  color: white;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 4em;
+}
+
+.movie-card img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.watchlist {
+  justify-content: center;
+  width: 500px;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  position: sticky;
+  top: 0px;
+  padding-bottom: 69px;
+  text-align: center;
+  background-color: black;
+  scrollbar-color: dark;
+}
+
+.watchlist img {
+  box-shadow: 1px 1px 20px #25aae1;
+  border-radius: 200px;
+}
+
+.watchlist button {
+  box-shadow: 1px 1px 10px red;
+}
+
+.watchlist button:hover {
+  color: red;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+img:hover {
+  backdrop-filter: blur(10px);
+  filter: blur(4px);
+  transition: 0.5s ease;
+}
